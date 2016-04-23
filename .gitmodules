@@ -1,0 +1,3 @@
+[submodule "imports/pdf.js"]
+	path = imports/pdf.js
+	url = https://github.com/mozilla/pdf.js.git
