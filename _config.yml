@@ -34,9 +34,9 @@ resume_section_associations:    false
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://andrewmfiorillo.github.io/resume.pdf"
+  resume_github_url:            "https://andrewmfiorillo.github.com/"
   resume_twitter_url:           "http://twitter.com/muthebeagle"
-  # resume_facebook_url:          "insert Facebook URL here"
+  resume_file-pdf-o_url:        "http://andrewmfiorillo.github.io/resume.pdf"
   resume_linkedin_url:          "https://www.linkedin.com/in/andrewmfiorillo"
   # resume_instagram_url:         "insert your Instagram URL here"
   resume_website_url:           "http://andrewmfiorillo.github.io/"
