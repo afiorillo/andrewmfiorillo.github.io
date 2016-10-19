@@ -219,8 +219,14 @@ a{
     border-radius: 3px;
 }
 
+.my-resume-link:hover{
+    color: #da291c;
+}
 .my-twitter-link:hover{
     color: #1da0f2;
+}
+.my-linkedin-link:hover{
+    color: #0077b5;
 }
 .my-github-link:hover{
     color: #e19e2f;
@@ -229,7 +235,7 @@ a{
     color: #ea8462;
 }
 .my-item{
-     font-family: 'Libre Baskerville', serif;    
+     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
     margin-bottom: 20px;
 }
