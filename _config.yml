@@ -1,14 +1,14 @@
 title: "Andrew Fiorillo"
 description: "I'm a software engineer with a passion for physics and mathematics."
-about: "I've been working in computer vision, database design, and HPC solutions.
-My education has been focused on Physics and Mathematics.
-I spend my off hours learning new laguages and tinkering."
-info-text: ""
+about: "I've been working in computer vision, database design, and HPC solutions.<br>
+My education has been focused on Physics and Mathematics.<br>
+I spend my off hours learning new laguages and tinkering.<br>"
+# info-text: ""
 location: "Tampa, Florida"
 email: andrewmfiorillo@gmail.com
 baseurl: ""
 url: "https://andrewmfiorillo.github.io/" # replace by your site's url
-resume_link: resume.pdf
+resume_link: FiorilloAndrew.pdf
 linkedin_username: andrewmfiorillo
 twitter_username: muthebeagle
 github_username:  andrewmfiorillo
@@ -21,7 +21,7 @@ isolang: en
 close_btn: "Close"
 home_btn: "Home"
 projects_btn: "Projects"
-about_btn: "Info"
+# about_btn: "Info"
 posts_btn: "Posts"
 imprint_btn: "Imprint"
 name_badge: "an article by"
