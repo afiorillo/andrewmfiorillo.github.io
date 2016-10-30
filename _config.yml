@@ -1,48 +1,61 @@
-# Site settings
 title: "Andrew Fiorillo"
-description: "Trained in Physics, Tested in Algorithms."
+description: "I'm a software engineer with a passion for physics and mathematics."
+about: "I've been working in computer vision, database design, and HPC solutions.<br>
+My education has been focused on Physics and Mathematics.<br>
+I spend my off hours learning new laguages and tinkering.<br>"
+# info-text: ""
+location: "Tampa, Florida"
+email: andrewmfiorillo@gmail.com
+baseurl: ""
+url: "https://andrewmfiorillo.github.io/" # replace by your site's url
+resume_link: FiorilloAndrew.pdf
+linkedin_username: andrewmfiorillo
+twitter_username: muthebeagle
+github_username:  andrewmfiorillo
 
-# Build settings
+# google analytics tracking code, please change the value
+g_analytics: "UA-81332412-1"
+
+# language settings
+isolang: en
+close_btn: "Close"
+home_btn: "Home"
+projects_btn: "Projects"
+# about_btn: "Info"
+posts_btn: "Posts"
+imprint_btn: "Imprint"
+name_badge: "an article by"
+rss_badge: "Subscribe feed!"
+
+# build settings
 markdown: kramdown
-sass:
-  sass_dir: _sass
-  style: compressed
+highlighter: rouge
 
-# Resume settings
-resume_avatar:                  "true"
-resume_name:                    "Andrew Fiorillo"
-resume_title:                   "Research Software Engineer"
-resume_contact_email:
-  "afiorillo1@gmail.com"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    tab_width: 4
 
-# use "yes" to display the email contact button,
-# "no" to display an "I'm not looking for work" message,
-# or remove the resume_looking_for_work option entirely
-# to leave blank
-resume_looking_for_work:        "no"
+# third party gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
 
-# Decide which sections to use
-# comment out to hide
-resume_section_experience:      true
-resume_section_education:       true
-resume_section_projects:        false
-resume_section_skills:          true
-resume_section_recognition:     false
-resume_section_links:           false
-resume_section_associations:    false
+whitelist:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
 
-# Resume social links
-# uncomment the options you wish to display, and add your own URL
-resume_social_links:
-  resume_github_url:            "https://github.com/andrewmfiorillo"
-  resume_twitter_url:           "http://twitter.com/muthebeagle"
-  resume_pdf_url:               "https://andrewmfiorillo.github.io/resume.pdf"
-  resume_linkedin_url:          "https://www.linkedin.com/in/andrewmfiorillo"
-  resume_website_url:           "http://andrewmfiorillo.github.io/"
-
-# Design settings
-resume_theme:                   default
-
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _config.yml are only recognized when the server starts
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
