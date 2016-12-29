@@ -1,7 +1,0 @@
-- name: Analysis of Edge-Enhanced Raman
-  link: "#"
-  description: "I wrote my undergraduate thesis on a specific application of Raman spectroscopy: Edge-Enhanced Raman Spectroscopy (EERS). To organize, archive, and analyze this data (~1 TB) I developed a Python package. I'm working on making the source and collected data public."
-
-- name: deepzoom [-python | -go | ...]
-  link: "https://github.com/andrewmfiorillo/deepzoom-python"
-  description: "Unable to find a good (deepzoom) image server for images that are too large for system memory, I've set about making several. This project is in the early stages and is excitedly developing!"

@@ -1,19 +1,36 @@
-# My personal website
-:point_right: http://himsel.me :point_left:
+# henrik.nyh.se
 
-### Checkout my blog
-You will find a number of topcs: music, piano, open data and more or less some nerd topics.  
-Expect mostly german posts but also not so less in english.  
-[Hit the page!](http://himsel.me)
+Static HTML site.
 
-### Use this Jekyll theme
-[Read the Article about it!](http://himsel.me/2016/09/19/use-my-jekyll-theme.html)  
-If you are too busy to read these few lines, then please do this:  
-- change the site's url in `_config.yml`  
-- remove / reedit the `CNAME` file.  
-- **CHANGE THE GOOGLE ANALYTICS ID**
-You *have to* change the value of `g_analytics` in _config.yml.
 
-####License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-This theme is distributed under the MIT License.
+## Development
+
+Install dependencies (once):
+
+```
+bundle
+```
+
+CSS is being generated from SCSS (Sass). To automatically convert SCSS on edit, run this in a separate (tmux) window:
+
+```
+script/watch
+```
+
+If something doesn't appear to work, watch that window for errors and warnings.
+
+The content is in a `public` directory to work with [Pow](http://pow.cx) for local development.
+
+Or just do this in an OS X terminal:
+```
+open public/index.html
+```
+
+
+## Production
+
+To convert SCSS to CSS and deploy by scp:
+
+```
+script/deploy
+```
