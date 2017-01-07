@@ -272,19 +272,28 @@ sub {
 /*
  * Light-up icons
  */
- .my-resume-link:hover{
+ .my-link, .my-link:visited {
+  color: #23ccbe;
+  text-decoration: none;
+  border-bottom: 1px solid #ededed;
+}
+.my-links{
+  text-align: center;
+  padding: 0;
+}
+ .my-resume-link:hover, .my-resume-link:visited{
      color: #da291c;
  }
- .my-twitter-link:hover{
+ .my-twitter-link:hover, .my-twitter-link:visited{
      color: #1da0f2;
  }
- .my-linkedin-link:hover{
+ .my-linkedin-link:hover, .my-linkedin-link:visited{
      color: #0077b5;
  }
- .my-github-link:hover{
-     color: #e19e2f;
+ .my-github-link:hover, .my-github-link:visited{
+     color: #4078c0;
  }
- .my-mail-link:hover{
+ .my-mail-link:hover, .my-mail-link:visited{
      color: #ea8462;
  }
 
@@ -557,8 +566,10 @@ body {
   margin-bottom: 20px;
 }
 
-.elsewhere {
-  margin-top: 40px;
+.footer {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -572,7 +583,7 @@ a, b {
   font-weight: 400;
 }
 
-a, a:visited {
+a {
   color: #23ccbe;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
@@ -583,7 +594,7 @@ a:hover, a:focus {
 }
 
 .at {
-  color: #b8d8d5;
+  /*color: #b8d8d5;*/
 }
 
 .the-face {
@@ -591,15 +602,46 @@ a:hover, a:focus {
   height: 242px;
 }
 
-.elsewhere {
-  font-size: 16px;
+.footer-links {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
-.elsewhere__item {
+.footer-links-item {
   display: inline;
-  margin: 0 -15px;
+  width: 50%;
 }
+@media screen and (min-width: 20em) {
+  .footer-links-item {
+    width: 33.3%;
+  }
+}
+
+/* ==========================================================================
+   Blog Posts
+   ========================================================================== */
+/**
+ * Styling for blog posts
+ */
+
+ ul.posts {
+   list-style-type: none;
+   margin-bottom: 2em;
+   font: 13.34px helvetica, arial, clean, sans-serif;
+   *font-size: small;
+   text-align: center;
+ }
+
+   ul.posts li {
+     line-height: 1.75em;
+   }
+
+   ul.posts span {
+     color: #aaa;
+     font-family: Monaco, "Courier New", monospace;
+     font-size: 80%;
+   }
+
 
 /* Third Party */
 
