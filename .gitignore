@@ -1,3 +1,9 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# ignore all images starting with "_"
+_*.jpg
+_*.jpeg
+_*.png
+_*.fig
