@@ -10,7 +10,6 @@ body {
   font-family: 'Frank Ruhl Libre', sans-serif;
 }
 
-
 /* ----------
 Links
 ---------- */
@@ -87,12 +86,19 @@ Typography
   position: relative;
   width: 90%;
   left: 5%;
+  right: 5%
   padding-top: 1em;
 }
 .full-width {
   position: relative;
   width: 100%;
   left: 0%;
+}
+
+.equation {
+  position: relative;
+  width: 100%;
+  align-items: center;
 }
 
 /* ----------

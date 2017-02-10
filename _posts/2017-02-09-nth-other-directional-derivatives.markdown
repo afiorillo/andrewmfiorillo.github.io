@@ -33,15 +33,15 @@ Double back to edges, some methods (namely, Lindeberg's) require calculating the
 Higher order directional derivatives can be computed 'by-hand' in an iterative process,
 
 <span class="equation">
-\\[ {D^1\_\\vec{u}} g(x,y) = \\vec{\\nabla} g \\cdot \\vec{u} \\text{ ,} \\]
+\\begin{align} {D^1\_\\vec{u}} g(x,y) & = \\vec{\\nabla} g \\cdot \\vec{u} \\text{ ,} \\end{align}
 </span>
 
 <span class="equation">
-\\[ {D^2\_\\vec{u}} g(x,y) = \\vec{\\nabla} \\left( {D^1\_\\vec{u}} g(x,y) \\right) \\cdot \\vec{u} \\text{ , and ...} \\]
+\\begin{align} {D^2\_\\vec{u}} g(x,y) & = \\vec{\\nabla} \\left( {D^1\_\\vec{u}} g(x,y) \\right) \\cdot \\vec{u} \\text{ , and ...} \\end{align}
 </span>
 
 <span class="equation">
-\\[ {D^n\_\\vec{u}} g(x,y) = \\vec{\\nabla} \\left( D^{n-1}\_\\vec{u} g(x,y) \\right) \\cdot \\vec{u} \\text{ .} \\]
+\\begin{align} {D^n\_\\vec{u}} g(x,y) & = \\vec{\\nabla} \\left( D^{n-1}\_\\vec{u} g(x,y) \\right) \\cdot \\vec{u} \\text{ .} \\end{align}
 </span>
 
 That, however requires computing all of the directional derivatives up to $n$, which can range from unpleasant to excruciating.
@@ -50,17 +50,25 @@ A shortcut, and the reason I wrote up this post, involves observing that the hig
 For example,
 
 <span class="equation">
-\\[ D^1_\\vec{u} g(x,y) = u_x \\frac{\\partial g}{\\partial x} + u_y \\frac{\\partial g}{\\partial y} \\text{ ,} \\]
+\\begin{align} D^1_\\vec{u} g(x,y) &= u_x \\frac{\\partial g}{\\partial x} + u_y \\frac{\\partial g}{\\partial y} \\text{ ,} \\end{align}
 </span>
 
 <span class="equation">
-\\[ D^2_\\vec{u} g(x,y) = \\vec{\\nabla} ( \\vec{\\nabla} g \\cdot \\vec{u}) \\cdot \\vec{u} =
-u_x^2 \\frac{\\partial^2 g}{\\partial x^2} + 2 u_x u_y \\frac{\\partial^2 g}{\\partial x \\partial y} + u_y^2 \\frac{\\partial^2 g}{\\partial y^2}\\text{ , and} \\]
+\\[
+\\begin{align}
+D^2_\\vec{u} g(x,y) & = \\vec{\\nabla} ( \\vec{\\nabla} g \\cdot \\vec{u}) \\cdot \\vec{u} \\\\\\
+& = u_x^2 \\frac{\\partial^2 g}{\\partial x^2} + 2 u_x u_y \\frac{\\partial^2 g}{\\partial x \\partial y} + u_y^2 \\frac{\\partial^2 g}{\\partial y^2}\\text{ , and}
+\\end{align}
+\\]
 </span>
 
 <span class="equation">
-\\[ D^3_\\vec{u} g(x,y) = \\vec{\\nabla} \\left[ \\vec{\\nabla} ( \\vec{\\nabla} g \\cdot \\vec{u}) \\cdot \\vec{u} \\right] \\cdot \\vec{u} =
-u_x^3 \\frac{\\partial^3 g}{\\partial x^3} + 3 u^2_x u_y \\frac{\\partial^3 g}{\\partial x^2 \\partial y} + 3 u_x u_y^2 \\frac{\\partial^3 g}{\\partial x \\partial y^2} + u_y^2 \\frac{\\partial^3 g}{\\partial x \\partial y^2}\\text{ .} \\]
+\\[
+\\begin{align}
+D^3_\\vec{u} g(x,y) & = \\vec{\\nabla} \\left[ \\vec{\\nabla} ( \\vec{\\nabla} g \\cdot \\vec{u}) \\cdot \\vec{u} \\right] \\cdot \\vec{u} \\\\\\
+& = u_x^3 \\frac{\\partial^3 g}{\\partial x^3} + 3 u^2_x u_y \\frac{\\partial^3 g}{\\partial x^2 \\partial y} + 3 u_x u_y^2 \\frac{\\partial^3 g}{\\partial x \\partial y^2} + u_y^2 \\frac{\\partial^3 g}{\\partial x \\partial y^2}\\text{ .}
+\\end{align}
+\\]
 </span>
 
 This can be rewritten into a more familiar binomial-like expression,
