@@ -16,7 +16,7 @@ Derivatives are pretty incredible tools for analysis, and they'll tell you a lot
 When you encounter a function of two (or more) variables,  think $z=g(x,y)$, you're faced with a choice of which *direction* to calculate the derivative in.
 The picture below should illustrate this choice.
 
-# picture of z = x^2 + y
+ <!-- picture of z = x^2 + y -->
 <img src="/images/posts/plots/derivatives_mesh-all.jpg" class="third-width-img">
 
 Taking a derivative in just the $x$-direction will give you a very different result than the a derivative in just the $y$-direction.
@@ -27,12 +27,13 @@ It's written
 </span>
 Note, the upside-down triangle $\\vec{\\nabla}$$ which comes up a lot in vector calculus -- I call it "del" -- and here is the [gradient](https://en.wikipedia.org/wiki/Gradient) of $g(x,y)$.
 
+# This is a draft post.
 
-# I can also write equations, like $F = ma$! Maybe display equations work?
-# <span class="equation">
-# \\[ F = m { {d^2x} \\over {dt^2} } \\]
-# </span>
-# They do! But you have to double escape slashes!
+<!-- # I can also write equations, like $F = ma$! Maybe display equations work? -->
+<!-- # <span class="equation"> -->
+<!-- # \\[ F = m { {d^2x} \\over {dt^2} } \\] -->
+<!-- # </span> -->
+<!-- # They do! But you have to double escape slashes! -->
 
 
-#Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<!-- #Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk]. -->
