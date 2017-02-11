@@ -62,8 +62,8 @@ Typography
   text-align: center;
 }
 .content-wrapper {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: left;
 }
 .post-wrapper {
@@ -85,10 +85,11 @@ Typography
 }
 .post-content {
   position: relative;
-  width: 90%;
-  left: 5%;
-  right: 5%
+  width: 85%;
+  left: 7.5%;
+  right: 7.5%
   padding-top: 1em;
+  text-align: justify;
 }
 .full-width {
   position: relative;
@@ -97,9 +98,8 @@ Typography
 }
 
 .equation {
-  position: relative;
-  width: 100%;
-  align-items: center;
+  display: block;
+  max-width: 90%;
 }
 
 /* ----------

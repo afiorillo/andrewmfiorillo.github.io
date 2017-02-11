@@ -11,6 +11,7 @@
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,900|Inconsolata:400,700" rel="stylesheet">
+
 <!-- CSS -->
 <link rel="stylesheet" href="/assets/main.css">
 <link rel="stylesheet" href="/assets/normalize.css">
@@ -21,8 +22,7 @@
 <script src="/assets/main.js"></script>
 <script src="https://use.fontawesome.com/a040f27264.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script> -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
@@ -30,9 +30,13 @@
     extensions: ["tex2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
     TeX: {
       extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-    }
+    },
+    CommonHTML: { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+           SVG: { linebreaks: { automatic: true } }
   });
 </script>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!-- Google Analytics -->
 <script>
