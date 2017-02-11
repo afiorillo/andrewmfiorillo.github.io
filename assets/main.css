@@ -98,7 +98,7 @@ Typography
 }
 
 .equation {
-  display: block;
+  /*display: block;*/
   max-width: 90%;
 }
 
