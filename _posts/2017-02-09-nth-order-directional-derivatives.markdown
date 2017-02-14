@@ -9,9 +9,9 @@ tags: mathematics differentiation edge-detection vector-calculus
 
 I've spent the last few months at work on a project involving differential edge detection.
 Working with images, the benefits of a good and robust edge detector are manifest: better object detection, better segmentation, better classification, overall a smarter algorithm.
-The issue of edge detection goes back at least as far as 1968 when Irwin Sobel (and his partner Feldman) presented a gradient operator at the Stanford AI Lab (SAIL).
-The field still has quite a bit of active work, with some of the more mathematically rich methods including filtering by a [Laplacian of Gaussian](http://homepages.inf.ed.ac.uk/rbf/HIPR2/log.htm) filter (Marr & Hildreth) or seeking maxima in directional derivatives ([Lindeberg](https://en.wikipedia.org/wiki/Edge_detection#Differential)).
-One task that came up often was figuring out the *n*-th *directional* derivative of a 2D image, and this post talks about that problem and a useful computational rule.
+The issue of edge detection goes back at least as far as 1968 when Irwin Sobel (and his partner Gary Feldman) presented a gradient operator at the Stanford AI Lab (SAIL).
+The field still has quite a bit of active work, with some of the more mathematically rich methods including filtering by a [Laplacian of Gaussian](http://homepages.inf.ed.ac.uk/rbf/HIPR2/log.htm) (Marr & Hildreth) or seeking maxima in directional derivatives ([Lindeberg](https://en.wikipedia.org/wiki/Edge_detection#Differential)).
+One task that came up often was figuring out the *n*-th *directional* derivative of a 2D image -- this post talks about that problem and a useful computational rule.
 
 First, it never hurts to clearly define what a directional derivative is, focusing on the 2D case.
 [Derivatives](https://en.wikipedia.org/wiki/Derivative) are pretty incredible tools for [analysis](https://en.wikibooks.org/wiki/Real_Analysis/Applications_of_Derivatives), and they'll tell you a lot about a function of a single variable $f(x)$.
