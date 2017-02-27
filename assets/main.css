@@ -66,11 +66,14 @@ Typography
   padding-right: 1em;
   text-align: left;
 }
+.post-stamp {
+  font-family: "Oxygen Mono", monospace;
+}
 .post-wrapper {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Frank Ruhl Libre", sans-serif;
 }
 .post-title {
-  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-family: "Frank Ruhl Libre", serif, bold;
 }
 .bio-body {
   position: relative;
