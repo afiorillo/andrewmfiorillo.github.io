@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Proof for N-th Order Directional Derivatives"
-date:   2017-01-01 14:42:17 -0500
+date:   2017-03-06 12:22:00 -0500
 location: "Tampa, FL"
 category: math
 tags: mathematics differentiation edge-detection vector-calculus
@@ -63,8 +63,11 @@ D_{\\vec{u}}^{n+1} & = \\vec{\\nabla} \\left( D_{\\vec{u}^n f}\\right) \\cdot \\
 & = \\Bigg[ \\left( \\hat{i}\\frac{\\partial}{\\partial x} + \\hat{j}\\frac{\\partial}{\\partial y} \\right) \\Big[ \\sum_{k=0}^n \\binom{n}{k} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n-k} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^{k} \\Big] f \\Bigg] \\cdot \\left( \\hat{i}u_x + \\hat{j}u_y \\right) \\\\\\
 & = \\Bigg[ \\hat{i} \\sum_{k=0}^n \\binom{n}{k} \\left( u_x \\right)^{n-k} \\left( \\frac{\\partial}{\\partial x} \\right)^{n-k+1} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^k + \\hat{j} \\sum_{l=0}^n \\binom{n}{l} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n-l} \\left( u_y \\right)^l \\left( \\frac{\\partial}{\\partial y} \\right)^{l+1} \\Bigg] \\cdot \\left( \\hat{i}u_x + \\hat{j}u_y \\right) f \\\\\\
 & = \\Bigg[ \\sum_{k=0}^n \\binom{n}{k} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n-k+1} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^k + \\sum_{l=0}^n \\binom{n}{l} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n-l} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^{l+1} \\Bigg] f \\\\\\
-& = \\Bigg[ \\binom{n}{0} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1} + \\ldots + \\binom{n}{n} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^{n+1} \\Bigg] f
+& = \\Bigg[ \\binom{n}{0} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1} + \\Big[ \\sum_{k=1}^n \\left( \\binom{n}{k} + \\binom{n}{k-1} \\right) \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1-k} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^k \\Big] + \\binom{n}{n} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^{n+1} \\Bigg] f \\\\\\
+& = \\Bigg[ \\binom{n}{0} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1} + \\Big[ \\sum_{k=1}^n \\binom{n+1}{k} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1-k} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^k \\Big] + \\binom{n}{n} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^{n+1} \\Bigg] f \\\\\\
+& = \\Bigg[ \\binom{n+1}{0} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1} + \\Big[ \\sum_{k=1}^n \\binom{n+1}{k} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1-k} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^k \\Big] + \\binom{n+1}{n+1} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^{n+1} \\Bigg] f \\\\\\
+D_{\\vec{u}}^{n+1} & = \\Bigg[ \\sum_{k=0}^{n+1} \\binom{n+1}{k} \\left( u_x \\frac{\\partial}{\\partial x} \\right)^{n+1-k} \\left( u_y \\frac{\\partial}{\\partial y} \\right)^k \\Bigg] f
 \\end{align}
 \\]
 
-Amirite?
+Then, given $D_{\\vec{u}}^n$, the definition of $D_{\\vec{u}}^{n+1}$ holds. $\\blacksquare$
