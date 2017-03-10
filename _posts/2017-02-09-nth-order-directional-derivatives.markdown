@@ -93,3 +93,7 @@ or in the compact form
 
 This is by no means a proof, but it's an observation that saved me a big headache and a fair amount of time at work.
 For a more comprehensive treatment of vector calculus, I never hesitate to recommend *[Div, Grad, Curl, and all that](http://www.indiebound.org/book/9780393925166)* by H. M. Schey, and *[Calculus](http://www.indiebound.org/book/9780521867443)* by Michael Spivak is a classic.
+
+<strong>Update: </strong>
+I sat on this solution for a few weeks before realizing it deserves a bona fide proof.
+[Here's](/math/2017/03/06/nth-order-directional-derivatives-proof.html) an inductive one.
