@@ -120,7 +120,7 @@ Typography
   position: relative;
   width: 85%;
   left: 7.5%;
-  right: 7.5%
+  right: 7.5%;
   padding-top: 1em;
   text-align: justify;
 }
@@ -133,6 +133,13 @@ Typography
 .equation {
   /*display: block;*/
   max-width: 90%;
+}
+
+.ingredient-table {
+  position: relative;
+  width: 85%;
+  left: 7.5%;
+  right: 7.5%;
 }
 
 /* ----------
