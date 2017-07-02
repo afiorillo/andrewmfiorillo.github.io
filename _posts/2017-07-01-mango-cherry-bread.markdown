@@ -20,7 +20,7 @@ The ingredients get portioned and mixed into three groups: Dry, Wet, and Fruit.
 | Dry   | All-Purpose Flour   | 2 cups   | 290      |
 | Dry   | Baking Soda         | 2 tsp.   | 6        |
 | Dry   | Sea Salt            | 0.5 tsp. | 3        |
-| Dry   | Speculaas Spice     | 1 tbsp.  | 6        |
+| Dry   | <a href="http://www.kingarthurflour.com/shop/items/speculaas-spice">Speculaas Spice</a>  | 1 tbsp.  | 6        |
 | Dry   | Corticated Cardamom | 0.5 tsp. | --       |
 | ----- | ------------------- | -------- | -------- |
 | Wet   | Plain Greek Yogurt  | 0.5 cup  | 132      |
