@@ -6,14 +6,14 @@ email: andrewmfiorillo@gmail.com
 repository: andrewmfiorillo/andrewmfiorillo.github.io
 meta_description: A selected "telefolio."
 description: >
-  I live in the perpetual sunshine of Tampa, FL.
-  I like to work like a madman, bake like a madman, and travel like a madman.
+  I live in the summertime paradise of Berlin (Germany).
+  I work like a madman, bake like a madman, and travel like a madman.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://andrewmfiorillo.github.io"
 twitter_username: muthebeagle
 github_username:  andrewmfiorillo
 linkedin_username: andrewmfiorillo
-resume_href: "Andrew_Fiorillo.pdf"
+resume_href: "/docs/fiorillo_resume.pdf"
 
 # Build settings
 markdown: kramdown
